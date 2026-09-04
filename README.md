@@ -33,7 +33,7 @@ The dashboard explores:
 
 ## Dashboard
 
-![Iowa State Expenditure Dashboard](dashboard.png)
+![Iowa State Expenditure Dashboard](dashboard/dashboard.png)
 
 ## Data Preparation
 
