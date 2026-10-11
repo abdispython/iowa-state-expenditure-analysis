@@ -45,6 +45,22 @@ The raw expenditure data was:
 4. Analyzed using PivotTables and Excel formulas
 5. Presented through an interactive dashboard
 
-## Note
+## Historical Comparison and Data Quality
 
-FY2026 data may be incomplete.
+During historical expenditure analysis, I identified inconsistencies in department names across fiscal years. Matching departments by name could therefore produce inaccurate historical comparisons.
+
+To address this, I used department numbers (`dept_no`) as the matching key and XLOOKUP to align expenditures across historical periods.
+
+### Key Analytical Decisions
+
+- **Department matching:** Used department identifiers rather than inconsistent names to compare historical spending.
+- **Historical periods:** Compared cumulative expenditures for FY2004–FY2014 and FY2015–FY2025, representing two 11-year periods.
+- **Incomplete reporting:** Excluded potentially incomplete FY2026 data from the historical period comparison to avoid misleading conclusions. FY2026 activity remains part of the broader expenditure analysis.
+- **Missing historical matches:** Distinguished unavailable historical comparisons from actual zero expenditure.
+- **Spending changes:** Examined both dollar and percentage changes to distinguish absolute financial differences from relative changes.
+
+### Analytical Limitations
+
+Historical percentage changes represent differences between cumulative expenditure totals across the two periods, not annual growth rates. The comparisons are not adjusted for inflation.
+
+These decisions improved the reliability and interpretation of the historical expenditure analysis.
